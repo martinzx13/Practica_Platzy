@@ -1,5 +1,5 @@
 # Practica_Platzy
-#Juan Pablo Martinez Aldana
+# Juan Pablo Martinez Aldana
 
 Practice the concepts about GitHub in a real enviroment. 
 
