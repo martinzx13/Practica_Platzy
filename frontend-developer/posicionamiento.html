@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Lo que se pretende hacer es posiciona en una caja
+el item y el container se puede hacer con posicion relative
+o absolut. -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 200px;
+            height: 200px;
+            background: peachpuff;
+            position: relative;
+            top: 20px;
+        }
+
+        .item {
+            width: 20px;
+            height: 20px;
+            background: hotpink;
+            position: absolute;
+            right: 0;
+        }
+
+        nav {
+            width: 100%;
+            height: 60px;
+            background: blue;
+            position: fixed;
+
+        }
+
+        ul {
+            position: sticky;
+        }
+
+        ul p {
+            /* Necesita de Otros Hermanos para 
+            entender a quien debe de darle permiso para 
+            subir */
+            position: sticky;
+            /* Organizar en la parte superior */
+            top: 0;
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav></nav>
+
+    <div class="container">
+        <div class="item"></div>
+    </div>
+    <p>
+        Lorem Ipsum
+        "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+        "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat mattis venenatis. Curabitur mollis quam
+        eget quam dignissim, quis suscipit tortor condimentum. Praesent condimentum diam in mi varius, ut auctor felis
+        aliquam. Praesent enim magna, tincidunt sed enim in, vehicula mattis nibh. Maecenas vestibulum lacus sit amet
+        orci viverra hendrerit. Aliquam ipsum arcu, rhoncus at massa non, consequat tincidunt lectus. Curabitur nec
+        augue justo. Integer ac posuere ipsum, eu faucibus risus. Cras id turpis facilisis eros viverra aliquet at id
+        lectus. Cras bibendum ipsum scelerisque erat facilisis, at consectetur tortor lacinia. Interdum et malesuada
+        fames ac ante ipsum primis in faucibus. Aliquam nisl turpis, feugiat eget ante in, porttitor congue justo.
+
+        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean porta
+        vestibulum ligula ac euismod. Donec id aliquam ligula, quis euismod augue. Cras fringilla diam id nisi porttitor
+        tincidunt. Nullam porttitor ullamcorper velit, nec venenatis eros mollis non. Vivamus turpis purus, tempus nec
+        efficitur id, porttitor et neque. In hac habitasse platea dictumst. Nullam volutpat odio et sapien cursus
+        lobortis. Phasellus sem risus, vestibulum sit amet ante eget, feugiat efficitur lacus. Mauris pharetra, diam
+        eget finibus sodales, leo risus venenatis velit, ac tristique eros justo quis orci. Proin eu sapien nec ipsum
+        dictum iaculis. Maecenas ac libero quis dolor volutpat dictum. Pellentesque habitant morbi tristique senectus et
+        netus et malesuada fames ac turpis egestas. Mauris eros velit, tincidunt vel nisl id, posuere aliquet justo.
+        Donec facilisis ligula eget leo auctor lacinia. Cras urna libero, facilisis ac consectetur in, placerat sed
+        nisi.
+
+        Curabitur pharetra, elit lacinia tincidunt aliquet, massa odio vehicula lectus, eget congue elit ipsum
+        pellentesque nibh. Aliquam a consequat leo. Vivamus ac tincidunt sem. Sed consectetur orci rutrum, sodales velit
+        eget, consectetur neque. Etiam molestie iaculis nisl, eu interdum sem porta id. Maecenas convallis rhoncus
+        velit, a consequat dui bibendum id. Nam lacinia viverra felis, at luctus diam commodo a. Donec in ante id mi
+        faucibus egestas. Duis sem eros, rhoncus quis tortor elementum, ultricies tincidunt magna. Nullam elementum
+        tincidunt mauris, eget blandit metus blandit id.
+
+        Pellentesque ut est scelerisque, ornare nunc vitae, convallis elit. Duis efficitur dolor ut ante luctus
+        pulvinar. Etiam at urna ex. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+        himenaeos. Nunc aliquam sapien quam, et mollis ante lobortis id. Ut ut felis dapibus, vehicula elit ac,
+        consequat est. Proin at nulla sapien.
+
+        Nunc eleifend finibus orci, et scelerisque dui consectetur ac. Fusce ac diam lobortis enim luctus ullamcorper id
+        eget neque. Nullam aliquam nisl at metus fermentum laoreet. Phasellus auctor lacus et nibh sagittis luctus. Duis
+        sollicitudin, justo vel vestibulum auctor, elit massa cursus purus, et luctus risus enim ac dolor. Sed ornare
+        semper porta. Maecenas venenatis velit eu ante faucibus tincidunt. Vestibulum ante ipsum primis in faucibus orci
+        luctus et ultrices posuere cubilia curae; Duis arcu neque, ultricies vel lacus eget, bibendum elementum lacus.
+        Cras iaculis eget felis quis efficitur. Nulla sagittis odio nec tristique tristique. In lobortis felis ut quam
+        cursus, in ultricies urna elementum. Duis quis eros neque. Aliquam tristique nulla quis erat ornare, sed euismod
+        tortor aliquam. Mauris rutrum malesuada dapibus. Vestibulum quis fringilla est.
+    </p>
+    <ul>
+        <p>Frutas</p>
+        <li>Manzanas</li>
+        <li>Peras</li>
+        <li>Sandia</li>
+        <li>Melocoton</li>
+    </ul>
+    <ul>
+        <p>Frutas</p>
+        <li>Manzanas</li>
+        <li>Peras</li>
+        <li>Sandia</li>
+        <li>Melocoton</li>
+    </ul>
+    <ul>
+        <p>Frutas</p>
+        <li>Manzanas</li>
+        <li>Peras</li>
+        <li>Sandia</li>
+        <li>Melocoton</li>
+
+    </ul>
+    <ul>
+        <p>Frutas</p>
+        <li>Manzanas</li>
+        <li>Peras</li>
+        <li>Sandia</li>
+        <li>Melocoton</li>
+
+    </ul>
+    <ul>
+        <p>Frutas</p>
+        <li>Manzanas</li>
+        <li>Peras</li>
+        <li>Sandia</li>
+        <li>Melocoton</li>
+
+    </ul>
+    <ul>
+        <p>Frutas</p>
+        <li>Manzanas</li>
+        <li>Peras</li>
+        <li>Sandia</li>
+        <li>Melocoton</li>
+
+    </ul>
+    <ul>
+        <p>Frutas</p>
+        <li>Manzanas</li>
+        <li>Peras</li>
+        <li>Sandia</li>
+        <li>Melocoton</li>
+
+    </ul>
+</body>
+
+
+</html>
